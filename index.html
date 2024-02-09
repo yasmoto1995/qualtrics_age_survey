@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <title>Slder</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="console-range">
+        <h4>問 1. あなたのお生まれは何年何月ですか。（数字を記入）</h4>
+        <div class="wrapper">
+            <label for="datepicker">誕生日を入力してください。
+                <select name="datepicker" id="datepicker" autocomplete="off"></select>
+            </label>
+            <label for="real-age">
+                <input type="text" id="real-age" placeholder="30" disabled>
+            </label>
+            <label for="real-age">
+                <input type="button" id="get_data" value="submit">
+            </label>
+        </div>
+    </div>
+    <div class="sub-question">
+        <div class="console-range">
+            <h4>問 11. 生まれてから現在までどこに住んでいましたか？</h4>
+            <div class="range-body">
+                <div class="vehicles-info">
+                    <h3>年齢（ねんれい）：</h3>
+
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="1）生まれた国">1）生まれた国</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="2）日本">2）日本 </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="3）その他の国">3）その他の国</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-range">
+                    <div class="grids">
+                        <div class="grids-head" id="timeslots-head-container">
+                        </div>
+                        <div class="grids-body">
+
+                            <div class="grids-row" id="timeslots-row-container">
+
+                            </div>
+
+                            <div class="grids-row" id="timeslots-row-containerJapan">
+                            </div>
+
+                            <div class="grids-row" id="timeslots-row-containerOther">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="console-range">
+            <h4>問 12. 当時のあなたの主な仕事は大きく分けて次にどれにあたりますか。</h4>
+            <div class="range-body">
+                <div class="vehicles-info">
+                    <h3>年齢（ねんれい）：</h3>
+
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="1）経営者・自営業（家族 の会社の手伝いも含 む）・自由業">1）経営者・自営業（家族 の会社の手伝いも含 む）・自由業</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="2）正社員・正規職員 ">2）正社員・正規職員 </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="3）パート・アルバイト・ 派遣社員・契約社員・ 臨時職員">3）パート・アルバイト・ 派遣社員・契約社員・ 臨時職員 </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="4）無職で仕事を探して いた">4）無職で仕事を探して いた </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="5）無職で仕事を探して いなかった">5）無職で仕事を探して いなかった </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <p title="6）学生">6）学生 </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-range">
+                    <div class="grids">
+                        <div class="grids-head" id="timeslots-head-work">
+                        </div>
+                        <div class="grids-body work">
+
+                            <div class="grids-row" id="timeslots-row-free">
+                            </div>
+
+                            <div class="grids-row" id="timeslots-row-job">
+                            </div>
+
+                            <div class="grids-row" id="timeslots-row-contract">
+                            </div>
+
+                            <div class="grids-row" id="timeslots-row-find">
+                            </div>
+
+                            <div class="grids-row" id="timeslots-row-not">
+                            </div>
+                            <div class="grids-row" id="timeslots-row-student">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ride-menu ride-opts">
+        <div class="ride-options">
+            <ul>
+                <li><a class="delete-ride" href="#" title=""><i class="ion-android-remove-circle"></i> 基準点の削除</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
